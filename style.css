@@ -39,9 +39,9 @@ body {
 }
 
 .main {
-    width: 100%;
+    min-width: 330px;
     max-width: 588px;
-    height: 712px;
+    height: 100vh;
     margin: auto;
     padding: 0 24px;
 }
@@ -53,8 +53,8 @@ body {
 }
 
 .profile>img {
-    min-width: 112px;
-    width: 150px;
+    min-width: 110px;
+    max-width: 140px;
     display: block;
     margin: auto;
     border-radius: 50%;
