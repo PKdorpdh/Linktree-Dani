@@ -14,6 +14,7 @@
     --bg-link-borderalpha: rgba(255, 255, 255, 0.03);
     --switch: url(assets/images/MoonStars.svg) rgb(255, 255, 255);
     --switch-track: url(./assets/images/track.svg) rgba(26, 25, 25, 0.192);
+    --link-threads: url(./assets/images/threads.png);
 }
 
 .lightmode {
@@ -159,6 +160,14 @@ li>a:hover {
 
 .social-links>a:hover {
     background: var(--bg-link-social);
+}
+
+.img-threads {
+    /* background: var(--link-threads) no-repeat center; */
+    width: 24px;
+    height: 24px;
+    -webkit-mask:var(--link-threads) cover/contain;
+          mask:var(--link-threads) cover/contain;
 }
 
 footer {
