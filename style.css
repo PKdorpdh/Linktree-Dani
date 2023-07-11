@@ -163,11 +163,8 @@ li>a:hover {
 }
 
 .img-threads {
-    /* background: var(--link-threads) no-repeat center; */
     width: 24px;
     height: 24px;
-    -webkit-mask:var(--link-threads) cover/contain;
-          mask:var(--link-threads) cover/contain;
 }
 
 footer {
