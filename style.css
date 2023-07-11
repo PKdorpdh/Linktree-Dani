@@ -75,6 +75,7 @@ body {
 
 .switch:hover {
     cursor: pointer;
+
 }
 
 .switch button {
@@ -87,9 +88,16 @@ body {
     transform: translateY(-50%);
     top: 50%;
     background: var(--switch) no-repeat center;
+    animation: slide-out .4s forwards;
+
+}
+
+.switch button:hover {
+    outline: 4px solid var(--bg-color-alpha);
 }
 
 .lightmode .switch button {
+    animation: slide-in 0.3s forwards;
     right: 0;
 }
 
@@ -164,5 +172,21 @@ footer span {
 }
 
 @keyframes slide-in {
+    from {
+        right: 50%;
+    }
     
+    to { 
+        right: 0;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        right: 0%;
+    }
+    
+    to { 
+        right: 60%;
+    }
 }
