@@ -5,14 +5,14 @@
 }
 
 :root {
-    --text-color: rgb(255,255,255);
+    --text-color: rgb(255, 255, 255);
     --bg-color-alpha: rgba(255, 255, 255, 0.09);
     --profile-border: rgb(218, 159, 241);
     --url-bg: url(assets/images/bg-mobile-dark.jpg);
     --bg-link-social: rgba(255, 255, 255, 0.1);
     --bg-link-border: rgba(255, 255, 255, 0.5);
     --bg-link-borderalpha: rgba(255, 255, 255, 0.03);
-    --switch: url(assets/images/MoonStars.svg) rgb(255,255,255);
+    --switch: url(assets/images/MoonStars.svg) rgb(255, 255, 255);
     --switch-track: url(./assets/images/track.svg) rgba(26, 25, 25, 0.192);
 }
 
@@ -29,17 +29,13 @@
 
 }
 
-body {
-    /* background-image: url(assets/images/bg-mobile-dark\ \(1080x1920\).jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover; */
-    background: var(--url-bg) no-repeat top center/cover;
-}
-
 body * {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
+}
+
+body {
+    background: var(--url-bg) no-repeat top center/cover;
 }
 
 .main {
@@ -57,7 +53,8 @@ body * {
 }
 
 .profile>img {
-    width: 112px;
+    min-width: 112px;
+    width: 150px;
     display: block;
     margin: auto;
     border-radius: 50%;
@@ -66,7 +63,7 @@ body * {
 
 .profile-id {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
 }
 
@@ -164,4 +161,8 @@ footer {
 
 footer span {
     text-decoration: underline;
+}
+
+@keyframes slide-in {
+    
 }
